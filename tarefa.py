@@ -1,0 +1,10 @@
+import pandas as pd
+df1 = pd.read_csv(r'C:\Users\crisp\OneDrive\Desktop\CURSOS\2026_SENAC_ANALISE DE DADOS\AULAS\Aula_17_funcionarios.csv')
+print(df1)
+print('\n')
+df2 = pd.read_csv(r'C:\Users\crisp\OneDrive\Desktop\CURSOS\2026_SENAC_ANALISE DE DADOS\AULAS\Aula_17_funcionarios_v2.csv')
+print(df2)
+print('\n')
+df12 = pd.concat([df1, df2])
+print(df12)
+df12.to_csv('df12.csv', index = False)
